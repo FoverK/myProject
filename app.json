@@ -1,0 +1,45 @@
+{
+        "pages": [
+                "pages/index/index",
+                "pages/emotion/emotion",
+                "pages/showArticle/showArticle",
+                "pages/wishWall/wishWall",
+                "pages/music/music",
+                "pages/addArticle/addArticle",
+                "pages/addWish/addWish",
+                "pages/addPlan/addPlan",
+                "pages/mine/mine",
+                "pages/state/index",
+                "pages/plans/plans"
+        ],
+        "window": {
+                "backgroundTextStyle": "light",
+                "navigationBarBackgroundColor": "#39b5de",
+                "navigationBarTitleText": "WeChat",
+                "navigationBarTextStyle": "black"
+        },
+        "tabBar": {
+                "color": "#000",
+                "list": [
+                        {
+                                "text": "主页",
+                                "pagePath": "pages/index/index",
+                                "iconPath": "images/home.png",
+                                "selectedIconPath": "images/home_highlight.png"
+                        },
+                        {
+                                "text": "情绪宣泄池",
+                                "pagePath": "pages/emotion/emotion",
+                                "iconPath": "images/emotion.png",
+                                "selectedIconPath": "images/select_emotion.png"
+                        },
+                        {
+                                "text": "个人中心",
+                                "pagePath": "pages/mine/mine",
+                                "iconPath": "images/my_1.png",
+                                "selectedIconPath": "images/my_2.png"
+                        }
+                ]
+        },
+        "sitemapLocation": "sitemap.json"
+}

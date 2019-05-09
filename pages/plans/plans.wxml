@@ -1,0 +1,51 @@
+<!--pages/plans/plans.wxml-->
+<view class="plan">
+  <view class="displan">
+  <text class = "plan_title">计划PLANS</text>
+  </view>
+
+<view class = "now">
+        当前日期: {{endDate}}
+  </view>
+
+  <view class="date_section">
+        <view class="start"></view>
+        <view class="plan_section">
+        
+        <block wx:for="{{plan_item}}" class="plan_list" >
+                <view class="plan_area" >
+                        <text class="plan_index">{{index + 1}}.</text>
+                        <text class="plan_content">{{item.content}}</text>
+                         <switch checked='{{item.status}}' class="plan_status"                     bindchange="changeStatus" type='checkbox' data-id="{{item.id}}"></switch>
+                        <view class="plan_time"><text>{{item.time}}</text></view>
+                       <view class="divLine"></view>
+                        
+                </view>
+                
+        </block>
+        </view>
+</view>
+
+
+<view class = "selectDate">
+  <picker mode="date" value="{{date}}" start="2010-01-01" end="{{endDate}}" bindchange="bindDateChange">
+    <view class="picker">
+      <text>日期选择: {{selectedDate}}</text>
+    </view>
+  </picker>
+  <view class = "btn_pro">
+        <button bindtap='seeProgress' >查看所选日期的进度</button>
+</view>
+</view>
+
+<view class = "modal_pro">
+<modal hidden = "{{dateprogress_hidden}}"title="完成进度" confirm-text="返回" no-cancel="true" bindconfirm="confirm" class="p_modal">
+                <view class = "progress">
+                        <view class = "porgress_title">{{date}}该天进度</view>
+                        <view class = "progress_value">{{date_progress}}</view>
+                </view>
+</modal>
+</view>
+
+</view>
+

@@ -1,0 +1,84 @@
+/* pages/plans/plans.wxss */
+
+.plan{
+        position: relative
+}
+.displan{
+        display: flex;
+        justify-content: left;
+}
+.now{
+        position: absolute;
+        top:0px;
+        right:0px;
+        font-size: 14px;
+}
+.plan_img{
+        width: 20px;
+        height: 20px;
+}
+.plan_title{
+        font-size: 20px;
+        color: darkorchid;
+}
+
+.plan_section{
+        width: 90%;
+        height: 100%;
+        margin-left: 5%; 
+        margin-top: 15px;    
+}
+
+.plan_area{
+        background-color: rgb(255, 255, 255);
+}
+
+.divLine{
+        margin-top: 11px;
+        background: rgb(94, 104, 189);
+        height: 0.5rpx;
+}
+.plan_index{
+        position: relative;
+        font-size: 18px;
+}
+.plan_content{
+        position: relative;
+        font-size: 18px;
+        color: lightseagreen;
+}
+.plan_status{
+        position: relative;
+        zoom: 1;
+        left: 225px;
+        bottom: 1px;
+}
+.plan_time {
+        margin-top: 10px;
+        position: relative;
+        font-size: 10px;
+        left: 280px;
+}
+
+.porgress_title{
+        color: deepskyblue;
+        font-size: 20px;
+        margin-left: 52px;
+}
+.progress_value{
+        color: red;
+        font-size: 20px;
+        margin-left: 130px;
+        margin-top: 10px;
+}
+.selectDate{
+        width: 100%;
+        font-size: 14px;
+        position: fixed;
+        bottom: 2px;     
+}
+.picker{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+}
