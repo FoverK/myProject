@@ -1,0 +1,36 @@
+<view class="diary" wx:if="{{!isPreview}}">
+  <view class='cover' bindtap='previewPhoto'>
+    <image class='img' mode='aspectFill' src="{{photo}}"></image>
+  </view>
+
+  <view>
+    <text class="time">{{time}}</text>
+  </view>
+
+  <view>
+    <text class="title">{{title}}</text>
+  </view>
+
+  <view>
+    <text class="content">{{content}}</text>
+  </view>
+
+  <view class="sentiment">
+    <text style="color:#ccc;font-size:16px;">情绪值  {{sentiment}}</text>
+  </view>
+  <view class="footer">
+    <view class="left" bindtap='updateDiary'>
+      <image src="../../images/update.png"></image>
+      <text>修改</text>
+    </view>
+
+    <view class="right" bindtap='deleteDiary'>
+      <image src="../../images/delete.png"></image>
+      <text>删除</text>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{isPreview}}" bindtap='backDetail'>
+  <image class='previewPhoto' mode='widthFix' src="{{photo}}"></image>
+</view>
